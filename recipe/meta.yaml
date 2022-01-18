@@ -1,5 +1,5 @@
 {% set name = "torchmetrics" %}
-{% set version = "0.6.2" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a43e232a73af71febce98949122600bfafb9437eefbda28fb36f328bc02357fb
+  sha256: dbfb8989086f38020045a935e83928504e1af1d84ae92b073f6a83d018f4bc00
 
 build:
   noarch: python
@@ -24,6 +24,7 @@ requirements:
     - python >=3.6
     - pytorch >=1.3
     - tqdm >=4.41.0  # Todo: tem fix for v0.5.1
+    - pyDeprecate ~= 0.3
 
 test:
   imports:
