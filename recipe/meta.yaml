@@ -1,5 +1,5 @@
 {% set name = "torchmetrics" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8516aa79edb8475504f37c6239b1176a5b1d93cf2249d961caccd1a240808208
+  sha256: 836c666425fd83a9b9785d9a9b52cd988925d3f545aed1217b3192552c7558ce
 
 build:
   noarch: python
