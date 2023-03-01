@@ -1,11 +1,11 @@
-About torchmetrics
-==================
+About torchmetrics-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchmetrics-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/torchmetrics/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchmetrics-feedstock/blob/main/LICENSE.txt)
 
 Summary: Collection of PyTorch native metrics for easy evaluating machine learning models
 
