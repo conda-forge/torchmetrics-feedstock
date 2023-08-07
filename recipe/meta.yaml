@@ -1,5 +1,5 @@
 {% set name = "torchmetrics" %}
-{% set version = "0.11.4" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1fe45a14b44dd65d90199017dd5a4b5a128d56a8a311da7916c402c18c671494
+  sha256: 537989d02337814e621a45232eeb1eacfd4700a66c2b5161d19ca2158246e075
 
 build:
   noarch: python
@@ -23,6 +23,7 @@ requirements:
     - setuptools
     - python >=3.7
     - pytorch >=1.8.1
+    - lightning-utilities >=0.7.0
 
 test:
   imports:
