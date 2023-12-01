@@ -1,5 +1,5 @@
 {% set name = "torchmetrics" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7eb28340bde45e13187a9ad54a4a7010a50417815d8181a5df6131f116ffe1b7
+  sha256: 217387738f84939c39b534b20d4983e737cc448d27aaa5340e0327948d97ca3e
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - python >=3.6
   run:
     - numpy >1.20.0
-    - packaging
+    - packaging >17.1
     - setuptools
     - python >=3.7
     - pytorch >=1.8.1
