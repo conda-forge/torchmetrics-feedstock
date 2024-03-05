@@ -17,12 +17,12 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
     - numpy >1.20.0
     - packaging >17.1
     - setuptools
-    - python >=3.7
+    - python >=3.8
     - pytorch >=1.10.0
     - lightning-utilities >=0.8.0
 
