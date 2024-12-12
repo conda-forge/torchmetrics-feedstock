@@ -6,29 +6,31 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 2d0e4957af0ea76438d2779fe1a626d8cba6cda8607eadb54267598153e7ea63
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python {{ python_min }}
     - setuptools
   run:
     - typing_extensions
     - numpy >1.20.0
     - packaging >17.1
     - setuptools
-    - python >=3.8
+    - python >={{ python_min }}
     - pytorch >=1.10.0
     - lightning-utilities >=0.8.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - torchmetrics
 
