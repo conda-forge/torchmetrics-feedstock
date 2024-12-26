@@ -1,5 +1,5 @@
 {% set name = "torchmetrics" %}
-{% set version = "1.5.2" %}
+{% set version = "1.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2d0e4957af0ea76438d2779fe1a626d8cba6cda8607eadb54267598153e7ea63
+  sha256: a5dc236694b392180949fdd0a0fcf2b57135c8b600e557c725e077eb41e53e64
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - packaging >17.1
     - setuptools
     - python >={{ python_min }}
-    - pytorch >=1.10.0
+    - pytorch >=2.0.0
     - lightning-utilities >=0.8.0
 
 test:
